@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) {
+    for (int i = 1; i <= 2; i++) {
+        for (int j = 1; j <= 3; j++) {
+            if (j == 2) {
+                continue; // Skip j = 2
+            }
+            printf("(%d,%d) ", i, j);
+        }
+    }
+    printf("\n");
+    return 0;
+}
